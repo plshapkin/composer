@@ -13,8 +13,6 @@ ext.versions = [
         junitPlatform    : '1.2.0',
         spek             : '1.1.2',
         assertJ          : '3.5.2',
-
-        versionsPlugin   : '0.36.0',
 ]
 
 ext.libraries = [

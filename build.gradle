@@ -6,22 +6,19 @@ buildscript {
     apply from: 'dependencies.gradle'
 
     repositories {
-        jcenter()
+        mavenCentral()
     }
 
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
-        classpath "com.github.ben-manes:gradle-versions-plugin:$versions.versionsPlugin"
         classpath "org.junit.platform:junit-platform-gradle-plugin:$versions.junitPlatform"
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        mavenCentral()
     }
-
-    apply plugin: 'com.github.ben-manes.versions'
 }
 
 def gitTag() {
